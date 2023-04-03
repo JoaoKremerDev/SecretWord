@@ -9,6 +9,8 @@ import { wordsList } from "./data/words";
 
 // Components
 import StartScreen from "./Components/StartScreen";
+import Game from "./Components/Game";
+import GameOver from "./Components/GameOver";
 
 const stages = [
   { id: 1, name: "start" },
@@ -18,6 +20,8 @@ const stages = [
 
 function App() {
   const [gameStage, setGameStage] = useState(stages[0].name);
+  const [words] = useState(wordsList)
+  console.log(words);
 
   return (
     <div className="App">
