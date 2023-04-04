@@ -29,7 +29,7 @@ const Game = ({
       <h1>Adivinhe a palavra:</h1>
       <h3 className="tip">
         Dica sobre a palavra: <span>{pickedCategory}</span>
-        <p>Você ainda tem xxx tentativa(s): {guesses}</p>
+        {guesses > 1 ? <p>Você ainda tem {guesses} tentativa(s)</p> : <p>Você ainda tem {guesses} tentativa</p>}
       </h3>
       <div className="wordContainer">
         {letters.map((letter, index) =>
