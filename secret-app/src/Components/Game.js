@@ -10,6 +10,7 @@ const Game = ({
   wrongLetters,
   guesses,
   score,
+
 }) => {
   const [letter, setLetter] = useState("");
   const letterInputRef = useRef(null);
